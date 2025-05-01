@@ -1,0 +1,186 @@
+/* Umum */
+body {
+    background: linear-gradient(to right, #ffe0b2, #ffffff); /* Warna latar belakang gradien */
+    font-family: 'Poppins', sans-serif; /* Font modern */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Heading */
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2980b9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Kontainer Utama */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card untuk Form Upload */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol */
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+/* Image */
+.img-thumbnail {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Animasi untuk tombol */
+.modal-footer .btn {
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn:hover {
+    background-color: #2980b9;
+}
+
+/* Styling Form Upload */
+input[type="file"] {
+    font-size: 1rem;
+    padding: 12px;
+    background-color: #f4f6f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input[type="file"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Grid untuk menampilkan gambar */
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-preview img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Alert */
+.alert {
+    background-color: #f7d5b2;
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+/* Styling Modal */
+.modal-header {
+    background-color: #f1c40f;
+    color: white;
+}
+
+.modal-body {
+    background-color: #f9f9f9;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+/* Styling untuk form dan tombol */
+form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+input[type="file"] {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    border-radius: 50px;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+.alert {
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.image-preview img {
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-preview img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
