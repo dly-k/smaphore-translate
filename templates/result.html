@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Terjemahan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="container py-5 text-center">
+    <h2 class="mb-4">📝 Hasil Kalimat Semaphore</h2>
+
+    <div class="d-flex justify-content-center flex-wrap gap-4 mb-4">
+        {% for item in predictions %}
+            <div class="text-center">
+                <img src="{{ url_for('static', filename='uploads/' + item.filename) }}" class="img-thumbnail" width="200">
+                <div class="mt-2 fw-bold fs-4">{{ item.letter }}</div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h3 class="mb-4">Kalimat: <span class="text-primary">{{ word }}</span></h3>
+    <a href="{{ url_for('reset') }}" class="btn btn-danger">Reset dan Mulai Ulang</a>
+</div>
+</body>
+</html>
